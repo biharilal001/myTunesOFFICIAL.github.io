@@ -39,7 +39,8 @@
      display: flex;
      justify-content: center;
      flex-direction: column;
-     background-image: url('./showcase.jpeg');
+     /* background-image: url('./showcase.jpeg'); */
+     background-image: radial-gradient( red, black);
      background-size: cover;
      background-repeat: no-repeat;
      text-align: center;
@@ -65,19 +66,19 @@ font-family: 'Montserrat', sans-serif;
 #mytunes h2::before{
      content: "";
      position: absolute;
-     border: 1px solid red;
+     border: 2px solid black;
      width: 110px;
      margin-top: 72px;
-     margin-left: -17px;
+     margin-left: -4px;
 }
 
 #mytunes h2::after{
      content: "";
      position: absolute;
-     border: 1px solid red;
+     border: 2px solid black;
      width: 110px;
      margin-top: 72px;
-     margin-left: -95px;
+     margin-left: -105px;
 
     
 }
@@ -152,6 +153,7 @@ font-family: 'Montserrat', sans-serif;
 }
 #sign_up_button a:hover{
      font-size: 27px;
+
 }
 
 /* ************** SONG LIST ******************** */
@@ -189,6 +191,12 @@ font-family: 'Montserrat', sans-serif;
     box-shadow: 2px 2px 2px #4cffae;
 
 }
+
+#song_list button a{
+     text-decoration: none;
+
+
+}
 #song_list button:hover{
    font-size: 1.6rem;
 }
@@ -211,14 +219,14 @@ font-family: 'Montserrat', sans-serif;
 
 .registerhere{
      /* border: 2px solid red; */
-     margin-bottom: 325px;
-     padding-left: 535px;
+     /* margin-bottom: 325px; */
+     /* padding-left: 535px; */
      text-transform: capitalize;
 }
 .registerhere h2{
   color: red;
   text-shadow: 2px 2px 2px yellow;
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   font-weight: bold;  
 }
 .registerhere h4{
@@ -229,7 +237,7 @@ font-family: 'Montserrat', sans-serif;
 
 .registerhere p{
      color: yellow;
-   font-size: 1.5rem;
+   font-size: 2.3rem;
   font-weight: bold;  
   text-shadow: 2px 2px red;
    
@@ -338,7 +346,6 @@ font-family: 'Montserrat', sans-serif;
      color: black;
     
 }
-
 
 
 
