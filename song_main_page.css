@@ -12,6 +12,7 @@
 }
 
 .mainbox{
+     
      background-image: linear-gradient(to top left , black , red , black );
      height: 209vh;
      display: grid;
@@ -30,7 +31,8 @@
 }
 /* ------------- NAV BAR STYLING ----------- */
 .navbar{
-    
+     opacity: 0.89;
+     background-color: #a91e1e;
      height: 14vh;
      position:fixed;
      display: flex;
@@ -103,7 +105,7 @@
 
 #logo{
      font-size: 2rem;
-     text-shadow: 2px 2px 2px yellow;
+     text-shadow: 2px 2px blue;
 }
 
 #appname{
@@ -389,8 +391,26 @@ audio{
      }
      
      .navbar{
-     font-size: 0.8rem;
+          height: 7vh;
+     font-size: 1rem;
         grid-area: navbar; 
+     }
+
+     .nav_items::before{
+          content: "";
+          position:absolute;
+          width: 0%;
+          background-color: white;
+          height: 3px;
+          bottom: 7px;
+          border-radius: 33px;
+          transition-timing-function: ease-out;
+          transition-duration: 0.2s;
+     }
+     .nav_items:hover.nav_items::before{
+          width: 20%;
+          cursor:pointer;
+          background-color: white;
      }
 
      .navbar .nav_items{
@@ -402,8 +422,10 @@ audio{
 
      /* ------------ SEARCH BAR STYLING ------------*/
      .search_bar{
-          margin-top: -15px;
-          height:6vh;
+          opacity: 0.89;
+          background-color: #a91e1e;
+          /* margin-top: -15px; */
+          height:7vh;
           display: flex;
           flex-direction: row;
           justify-content: space-around;
@@ -418,20 +440,20 @@ audio{
      
      .search_item{
           /* margin-top: auto; */
-          margin-bottom: 0px;
+          /* margin-bottom: 0px; */
           text-transform: capitalize;
           color: white;
           font-size: 1.8rem;
      }
      
      #logo{
-          font-size: 1rem;
+          color: yellow;
+          font-size: 1.4rem;
      }
      
      #appname{
-          font-size: 0.6rem;
-          padding: 5px;
-          margin-bottom: 0px;
+          display: none;
+         
      }
      
      /* ---------- SEARCH BOX STYLE------------ */ 
@@ -439,8 +461,11 @@ audio{
 #search_box{
      width: 88%;
      height:3px;
-     font-size: 0.6rem;
-     padding:8px;
+     font-size: 0.75rem;
+     padding:13px;
+}
+#search{
+   width: 60%; 
 }
 
 #search_icon{    
@@ -455,7 +480,7 @@ audio{
      
      /* ---------------- ANIMATION BOX STYLING ------------ */
      .box_animate{
-          margin-top: 80px;
+          margin-top: 100px;
     height: 20vh;
           grid-area: box_animate;
      }
@@ -498,3 +523,4 @@ audio{
 
 
 }
+
