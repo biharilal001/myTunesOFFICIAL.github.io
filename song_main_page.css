@@ -462,10 +462,11 @@ audio{
 #search_box{
      width: 88%;
      height:3px;
-     font-size: 0.75rem;
-     padding:13px;
+    font-size: 0.8rem;
+     padding: 16px;
 }
 #search{
+     margin-top:-4px;
    width: 60%; 
 }
 
