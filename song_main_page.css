@@ -423,7 +423,7 @@ audio{
      /* ------------ SEARCH BAR STYLING ------------*/
      .search_bar{
           opacity: 0.89;
-          background-color: #a91e1e;
+          /* background-color: #a91e1e; */
           /* margin-top: -15px; */
           height:7vh;
           display: flex;
@@ -486,11 +486,20 @@ audio{
      }
      /* ----------------- SIDE BAR STYLING ---------------- */
      .side_bar{
+          border-radius: 33px;
+          width: 80%;
+          border: 4px solid #42010159;
           grid-area: side_bar;
+          margin-left: auto;
+          margin-right: auto;
+          grid-area: side_bar;
+          box-shadow: 4px 4px 12px #cdc123b3;
     margin-left: auto;
     margin-right: auto;
           grid-area: side_bar;
      }
+
+
      /* ----------------- BOXES STYLING------------------ */
      
      .boxes{
@@ -523,4 +532,5 @@ audio{
 
 
 }
+
 
