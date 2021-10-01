@@ -127,6 +127,9 @@
      #song_list button{
         font-size: 1.2rem;
      }
+  #song_list button:hover{
+        font-size: 1.4rem;
+     }
 
      #contact .new .userinput h2{
           font-size: 1.5rem;
