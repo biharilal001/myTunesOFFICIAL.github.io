@@ -1,350 +1,536 @@
 *{
-     margin: 0px;
+     margin:0px;
      padding: 0px;
      box-sizing: border-box;
-     font-family: 'Baloo 2', cursive;
-     scroll-behavior: smooth;
-
 }
 
-.header{
-     position: fixed;
- }
-.header p{
-     border: 1px solid #fff;
-     border-radius: 30px;
-     margin: 11px;
-     padding:5px 10px;
-     text-align: center;
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color:wheat;
+    font-family: 'Ubuntu', sans-serif;
+}
 
- }
-.header p:hover{
-    background-color:#333;
-
- }
-
-.header a{
-     font-size: 1rem;
-     color: white;
-    text-decoration: none;
- }
-.header p a:hover{
-    background-color: #333;
- }
-
-
-
-
-#mytunes{
+.mainbox{
+     
+     background-image: linear-gradient(to top left , black , red , black );
+     height: 209vh;
+     display: grid;
+     grid-template-rows: 50px 50px repeat (6 , 100px );
+     grid-template-columns: repeat (4 , 100px );
+     grid-template-areas: 
+     "navbar navbar navbar navbar"
+     "search_bar search_bar search_bar search_bar"
+     "box_animate box_animate box_animate box_animate"
+     "side_bar boxes boxes boxes"
+     "side_bar boxes boxes boxes"
+     "side_bar boxes boxes boxes"
+     "side_bar boxes boxes boxes"
+     "footer footer footer footer"
+     ;
+}
+/* ------------- NAV BAR STYLING ----------- */
+.navbar{
+     opacity: 0.89;
+     background-color: #a91e1e;
+     height: 14vh;
+     position:fixed;
      display: flex;
-     justify-content: center;
-     flex-direction: column;
-     /* background-image: url('./showcase.jpeg'); */
-     background-image: radial-gradient( red, black);
-     background-size: cover;
-     background-repeat: no-repeat;
+     flex-direction: row;
+     justify-content: space-around;
      text-align: center;
-     height: 110vh;
-     /* border: 2px solid yellow; */
-     /* position: relative; */
-     color: white; 
-     width: 100%;
-     bottom: 170px;
-     padding-top: 126px;
-     padding-bottom: 70px; 
-     padding-left: 150px; 
-     padding-right: 150px; 
-}
-
-#mytunes h2 {
-     font-family: 'Baloo 2', cursive;
-font-family: 'Montserrat', sans-serif;
-     font-weight: bold;
-     font-size: 3.2rem;
-     padding-bottom: 20px;
-}
-#mytunes h2::before{
-     content: "";
-     position: absolute;
-     border: 2px solid black;
-     width: 110px;
-     margin-top: 72px;
-     margin-left: -4px;
-}
-
-#mytunes h2::after{
-     content: "";
-     position: absolute;
-     border: 2px solid black;
-     width: 110px;
-     margin-top: 72px;
-     margin-left: -105px;
-
-    
-}
-
-
-#mytunes h3 {
-     font-weight: bold;
-     font-size: 2rem;
-     padding-bottom: 20px;
-     text-transform: capitalize;
-}
-
-
- 
-
-#mytunes p{
-     font-size: 1.6rem;
-}
-
-/* **************** ******************* */
-
-
-#signup{
-     /* border:2px solid green; */
-     background-color: #333;
-     color: white;
-     text-align: center;
-     width: 100%;
-  height: 111vh;
-  bottom: 170px;
-  display: flex;
-  flex-direction: column;
-     padding: 135px 150px;
-}
-
-#signup i,h2{
-     font-size: 3.2rem;
-     font-weight: bold;
-}
-#signup h2{
-     padding-bottom: 20px;
-}
-#signup h3{
-     font-size: 2rem;
-     font-weight: bold;
-     padding-bottom: 20px;
-}
-
-#signup p{
      font-size: 1.5rem;
-     padding-bottom: 50px;
-    
-}
-
-#sign_up_button{
-     margin: 0px auto;
-     width: 16%;
-     padding:12px;
-     font-size: 26px;
-     text-transform: capitalize;
-     background-color: red;
-     color: white;
-     border-style: none;
-     border-radius: 5px;
-}
-#sign_up_button a {
-     text-decoration: none;
-     color: white;
-}
-#sign_up_button:hover{
-     background-color: rgb(255, 71, 71);
-}
-#sign_up_button a:hover{
-     font-size: 27px;
-
-}
-
-/* ************** SONG LIST ******************** */
-
-#song_list{
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-     background-image: url('./new9.jpg');
-     background-size: cover;
-     background-repeat: no-repeat;
-     height: 120vh;
-     padding-bottom: 150px;
-}
-#song_list h3 {
-     font-family: 'Koh Santepheap', cursive;
-     font-size: 3.2rem;
      font-weight: bold;
-     text-shadow: 2px 2px red;
-     text-decoration: tomato;
-     text-transform: capitalize;
-     color: white;
-     padding-bottom:34px
-
-}
-
-#song_list button{
-     font-weight: bold;
-   font-size: 1.5rem;
-   padding:10px;
-   background-color: #dcb1dc;
-    border-radius: 20px;
-    border-style: none;
-    box-shadow: 2px 2px 2px #4cffae;
-
-}
-
-#song_list button a{
-     text-decoration: none;
-
-
-}
-#song_list button:hover{
-   font-size: 1.6rem;
-}
-
-/* *****************     ABOUT  *********************** */
-
-#register{
      width: 100%;
-     display: flex;
-     flex-direction: column;
-     text-align: center;
-     justify-content: center;
-     height: 120vh;
-     background-image: url('./music7.jpeg');
-     background-repeat: no-repeat;
-     background-size: cover;
-     color: white;
-
-}
-
-.registerhere{
-     /* border: 2px solid red; */
-     /* margin-bottom: 325px; */
-     /* padding-left: 535px; */
-     text-transform: capitalize;
-}
-.registerhere h2{
-  color: red;
-  text-shadow: 2px 2px 2px yellow;
-  font-size: 4.5rem;
-  font-weight: bold;  
-}
-.registerhere h4{
-   font-size: 2rem;
-   color: yellow;
-   text-shadow: 2px 2px red;
-}
-
-.registerhere p{
-     color: yellow;
-   font-size: 2.3rem;
-  font-weight: bold;  
-  text-shadow: 2px 2px red;
-   
-}
-
-#registerbtn{
-     padding: 7px;
-     margin: 10px;
-     border-radius: 10px;
-     border-right-color: #0098ff;
-     border-bottom-color: #0098ff;
-}
-#registerbtn a{
-     text-decoration: none;
-     color: red;
-     font-size: 20px;
-     /* text-transform: capitalize; */
-     font-weight: bold;
-     text-shadow: 2px 2px #00ffd4;
-}
-#registerbtn a:hover{
-     font-size: 20.5px;
-}
-#registerbtn:hover{
-     border-style:dotted;
+     /* background-color:greenyellow; */
+   grid-area: navbar; 
+   color:white; 
 }
 
 
 
-/* *************** CONTACT US ************************ */
-
-#contact {
-     width: 100%;
-     height: 85vh;
-     background-color: #333;
-     padding-top:100px;
+.navbar .nav_items{
+  margin-top: 26px;
 }
 
-#contact .new .userinput{
-     width: 25%;
-     display: flex;
-     flex-direction: column;
-     text-align: center;
-     justify-content: center;
-     height: 50vh;
-     background-color: #333;
-     margin: 0px auto;
-}
 
-#contact .new .userinput input{
-   padding: 5px;
-   margin: 10px;
-   border: 2px solid rgb(116, 116, 116);
-   border-style: none;
+.navbar .nav_items a{
+     position: relative;
+   text-decoration: none;
+   color: white;
    text-transform: capitalize;
-   
-
+}
+.nav_items::before{
+     content: "";
+     position:absolute;
+     width: 0%;
+     /* background-color: white; */
+     height: 3px;
+     bottom: 33px;
+     border-radius: 33px;
+     transition-timing-function: ease-out;
+     transition-duration: 0.2s;
+}
+.nav_items:hover.nav_items::before{
+     width: 100px;
+     cursor:pointer;
+     background-color: white;
 }
 
-#contact .new .userinput h2{
 
+
+/* ------------ SEARCH BAR STYLING ------------*/
+.search_bar{
+     
+     height:4vh;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     top: 96px;
+     width: 100%;
+     position:fixed;
+     /* background-color:hotpink; */
+     grid-area: search_bar;
+}
+
+.search_item{
+     text-transform: capitalize;
      color: white;
-     text-transform: capitalize;
-     /* padding-top: 175px; */
-     padding-bottom: 33px;
-     padding-top: 30px;
-     font-size: 2.2rem;
+     /* border: 2px solid black; */
+     font-size: 1.8rem;
+     margin-top: auto;
+     margin-bottom: auto;
+     font-weight: bold;
+}
 
+#logo{
+     font-size: 2rem;
+     text-shadow: 2px 2px blue;
 }
-#contact .new .userinput img{
-   border-radius: 50px;
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-    width: 25%;
 
-}
-#contact .new .userinput h2::before{
-     content: "";
-     border: 2px solid red;
-     margin: 10px;
-
-}
-#contact .new .userinput h2::after{
-     content: "";
-     border: 2px solid red;
-     margin: 10px;
-
-}
-  
-#contactbtn{
-     margin: 10px;
-}
-#contactbtn:hover{
-     background-color: rgb(167, 164, 164);
-} 
-#contactbtn a{
-     font-family: 'Koh Santepheap', cursive;
-     text-decoration: none;
-     color: black;
+#appname{
+     border: 2px solid white;
+     border-radius: 20px;
      font-size: 1.2rem;
+     padding: 10px;
+margin-bottom: 10px;
+}
+
+#appname:hover{
+background-color:#ff5b5b;
+
+}
+
+#appname a{
+     text-decoration: none;
+     color: white;
+}
+
+
+
+/* ---------- SEARCH BOX STYLE------------ */
+
+#search{
+     width: 50%;
+}
+#search_box{
+     border: 1px solid grey;
+     width: 92%;
+     height:6vh;
+     border-radius: 20px;
      text-transform: capitalize;
+     font-size: 1rem;
+     padding:10px;
+}
+#search_box:hover{
+     border: 1px solid white;
+}
+
+#search_icon{
+     font-size: 1.5rem;
+}
+
+#search_icon:hover{
+     font-size: 1.55rem;
+}
+
+/* ----------- SEARCH BOX STYLE ENDS------------------- */
+
+
+
+/* ---------------- ANIMATION BOX STYLING ------------ */
+.box_animate{
+     /* margin-bottom: -60px; */
+     margin-top: 160px;
+     height: 28vh;
+     display: flex;
+     flex-direction: row;
+     overflow-x: scroll;
+     /* border: 2px solid yellow; */
+     grid-area: box_animate;
+     background-color: skyblue;
+}
+/* ----------------- SIDE BAR STYLING ---------------- */
+.side_bar{
+     margin-top: 20px;
+     display:flex;
+     flex-direction: column;
+     text-align: center;
+     overflow-y: scroll;
+     /* background-color:lightgreen; */
+     grid-area: side_bar;
+}
+.side_bar .song_type img{
+     width: 75%;
+    transition-timing-function: ease-out;
+    transition-duration: 0.2s;
+}
+.side_bar .song_type img:hover{
+   width: 80%;
+}
+.side_bar .song_type a{
+     text-transform: capitalize;
+     text-decoration: none;
+     color: white;
+     font-size: 1.2rem;
+     font-weight: bold;
+margin-bottom: 15px;
+}
+
+
+.side_bar .song_type a:hover{
+color: yellow;   
+}
+
+
+
+/* ----------------- BOXES STYLING------------------ */
+
+.boxes{
+     margin-top: 20px;
+     /* background-color:lightsalmon; */
+     grid-area: boxes;
+     display: grid;
+     grid-template-rows:  repeat(4,1fr );
+     grid-template-columns:  repeat(3,1fr );
+     grid-template-areas: 
+     "box-1 box-2 box-3"
+     "box-4 box-5 box-6"
+     "box-7 box-8 box-9"
+     "box-10 box-11 box-12";
+}
+
+
+.song_box{
+     margin: 5px;
+     background-size: cover;
+     
+
+}
+
+audio{
+     width: 100%;
+     margin-top: 195px;
+     height: 4vh;
+     opacity: 0.8;
+}
+
+#box-1{
+     grid-area: box-1;
+     background-image: url('./home song images/images24.jpg');
+      background-repeat: no-repeat;
+ 
+}
+#box-2{
+     grid-area: box-2;
+     background-image: url('./home song images/images27.jpg');
+      background-repeat: no-repeat;
+
+
+}
+#box-3{
+     grid-area: box-3;
+     background-image: url('./home song images/images26.jpg');
+      background-repeat: no-repeat;
+
+
+}
+#box-4{
+     grid-area: box-4;
+     background-image: url('./home\ song\ images/images28.jpg');
+ background-repeat: no-repeat;
+
+
+}
+#box-5{
+     grid-area: box-5;
+     background-image: url('./home\ song\ images/images29.jpg');
+ background-repeat: no-repeat;
+
+
+}
+#box-6{
+     grid-area: box-6;
+     background-image: url('./home\ song\ images/images30.jpg');
+ background-repeat: no-repeat;
+
+
+}
+#box-7{
+     grid-area: box-7;
+     background-image: url('./home\ song\ images/images31.jpg');
+ background-repeat: no-repeat;
+
+
+}
+#box-8{
+     grid-area: box-8;
+     background-image: url('./home\ song\ images/images32.jpg');
+ background-repeat: no-repeat;
+
+
+}
+#box-9{
+     grid-area: box-9;
+     background-image: url('./home\ song\ images/images33.jpg');
+ background-repeat: no-repeat;
+
+
+}
+#box-10{
+     grid-area: box-10;
+     background-image: url('./home\ song\ images/images34.jpg');
+ background-repeat: no-repeat;
+
+
+}
+#box-11{
+     grid-area: box-11;
+     background-image: url('./home\ song\ images/images35.jpg');
+ background-repeat: no-repeat;
+
      
 }
-#contactbtn a:hover{
-     color: black;
-    
+#box-12{
+     grid-area: box-12;
+     background-image: url('./home\ song\ images/images36.jpg');
+ background-repeat: no-repeat;
+
+
+}
+
+
+
+
+
+
+/* ---------------- FOOTER STYLING ---------------- */
+
+.footer{
+     position: relative;
+     text-align: center;
+     margin-top: 33px;
+     height: 6vh;
+     /* background-color:lightseagreen; */
+     grid-area: footer;
+}
+
+
+.footer a{
+     color: white;
+     font-size: 1.3rem;
+     text-decoration: none;
+}
+
+
+#last_line::before{
+     content: "";
+     position: absolute;
+     width: 0%;
+     height: 3px;
+     top: 25px;
+     border-radius: 40px;
+     background-color:white;
+     transition-timing-function: ease-out;
+     transition-duration: 0.3s;
+     
+}
+#last_line:hover#last_line::before{
+     width: 182px;
+     
+
+}
+
+.footer a:hover{
+     color: yellow;
+
+}
+
+
+
+
+
+/* ---------------  RESPONSIVENESS  ------------------ */
+
+@media (min-width:320px) and (max-width:475px){
+
+     .mainbox{
+          background-image: linear-gradient(to top left , black , red , black );
+          height: 234vh;
+          display: grid;
+          grid-template-rows: repeat (6 , 1fr );
+          grid-template-columns: repeat (1 , 1fr );
+          grid-template-areas: 
+          "navbar"
+          "search_bar"
+          "box_animate"
+          "side_bar"
+          "boxes"
+          "footer"
+          ;
+     }
+     
+     .navbar{
+          height: 7vh;
+     font-size: 1rem;
+        grid-area: navbar; 
+     }
+
+     .nav_items::before{
+          content: "";
+          position:absolute;
+          width: 0%;
+          background-color: white;
+          height: 3px;
+          bottom: 7px;
+          border-radius: 33px;
+          transition-timing-function: ease-out;
+          transition-duration: 0.2s;
+     }
+     .nav_items:hover.nav_items::before{
+          width: 20%;
+          cursor:pointer;
+          background-color: white;
+     }
+
+     .navbar .nav_items{
+          margin-top: 10px;
+        }
+        
+
+
+
+     /* ------------ SEARCH BAR STYLING ------------*/
+     .search_bar{
+          opacity: 0.89;
+          /* background-color: #a91e1e; */
+          /* margin-top: -15px; */
+          height:7vh;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          top: 40px;
+          width: 100%;
+          position:fixed;
+          /* background-color:hotpink; */
+          grid-area: search_bar;
+     }
+
+   
+     
+     .search_item{
+          /* margin-top: auto; */
+          /* margin-bottom: 0px; */
+          text-transform: capitalize;
+          color: white;
+          font-size: 1.8rem;
+     }
+     
+     #logo{
+          color: yellow;
+          font-size: 1.4rem;
+     }
+     
+     #appname{
+          display: none;
+         
+     }
+     
+     /* ---------- SEARCH BOX STYLE------------ */ 
+
+#search_box{
+     width: 88%;
+     height:3px;
+     font-size: 0.75rem;
+     padding:13px;
+}
+#search{
+   width: 60%; 
+}
+
+#search_icon{    
+     margin-left: 0px;
+     font-size: 0.8rem;
+}
+#search_icon:hover{    
+     font-size: 0.8rem;
+}
+
+/* ----------- SEARCH BOX STYLE ENDS------------------- */
+     
+     /* ---------------- ANIMATION BOX STYLING ------------ */
+     .box_animate{
+          margin-top: 100px;
+    height: 20vh;
+          grid-area: box_animate;
+     }
+     /* ----------------- SIDE BAR STYLING ---------------- */
+     .side_bar{
+          border-radius: 33px;
+          width: 80%;
+          border: 4px solid #42010159;
+          grid-area: side_bar;
+          margin-left: auto;
+          margin-right: auto;
+          grid-area: side_bar;
+          box-shadow: 4px 4px 12px #cdc123b3;
+    margin-left: auto;
+    margin-right: auto;
+          grid-area: side_bar;
+     }
+
+
+     /* ----------------- BOXES STYLING------------------ */
+     
+     .boxes{
+          grid-area: boxes;
+          display: grid;
+          grid-template-rows:  repeat(6,120px );
+          grid-template-columns:  repeat(2,1fr );
+          grid-template-areas: 
+          "box-1 box-2"
+          " box-3 box-4"
+           "box-5 box-6"
+          "box-7 box-8"
+          " box-9 box-10 "
+          "box-11 box-12";
+     }
+     
+.song_box{
+     margin: 10px;
+}
+
+
+audio{
+     margin-top: 78px;
+}
+
+
+.footer{
+     margin-top: 20px;
+}
+
+
 }
 
 
