@@ -414,7 +414,8 @@ audio{
      }
 
      .navbar .nav_items{
-          margin-top: 10px;
+          margin-top: auto;
+          margin-bottom: auto; 
         }
         
 
@@ -429,7 +430,7 @@ audio{
           display: flex;
           flex-direction: row;
           justify-content: space-around;
-          top: 40px;
+          top: 60px;
           width: 100%;
           position:fixed;
           /* background-color:hotpink; */
@@ -480,7 +481,7 @@ audio{
      
      /* ---------------- ANIMATION BOX STYLING ------------ */
      .box_animate{
-          margin-top: 100px;
+          margin-top: 120px;
     height: 20vh;
           grid-area: box_animate;
      }
