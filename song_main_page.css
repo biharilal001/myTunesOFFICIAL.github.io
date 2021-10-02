@@ -168,7 +168,7 @@ background-color:#ff5b5b;
      overflow-x: scroll;
      /* border: 2px solid yellow; */
      grid-area: box_animate;
-     background-color: skyblue;
+/*      background-color: skyblue; */
 }
 
 .box_animate img{
