@@ -503,6 +503,10 @@ audio{
           grid-area: side_bar;
      }
 
+.side_bar .song_type img{
+          margin-top: 15px;
+          border-radius: 10px;
+     }
 
      /* ----------------- BOXES STYLING------------------ */
      
