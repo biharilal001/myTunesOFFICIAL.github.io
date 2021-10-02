@@ -181,6 +181,7 @@ background-color:#ff5b5b;
      grid-area: side_bar;
 }
 .side_bar .song_type img{
+     border-radius:10px
      width: 75%;
     transition-timing-function: ease-out;
     transition-duration: 0.2s;
@@ -222,6 +223,7 @@ color: yellow;
 
 
 .song_box{
+     border-radius:10px;
      margin: 5px;
      background-size: cover;
      
@@ -519,6 +521,7 @@ audio{
      }
      
 .song_box{
+     
      border-radius:10px;
      margin: 10px;
 }
