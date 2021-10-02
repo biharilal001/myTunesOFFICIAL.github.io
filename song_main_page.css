@@ -170,6 +170,14 @@ background-color:#ff5b5b;
      grid-area: box_animate;
      background-color: skyblue;
 }
+
+.box_animate img{
+    border-radius:5px;
+margin:5px
+}
+
+
+
 /* ----------------- SIDE BAR STYLING ---------------- */
 .side_bar{
      margin-top: 20px;
